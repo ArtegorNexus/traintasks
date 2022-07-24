@@ -1,0 +1,156 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 14px;
+  background-color: rgb(216, 245, 235);
+}
+
+.task-window {
+  width: 700px;
+  margin: 0 auto;
+  margin-top: 40px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+}
+.task-window__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+.task-window__body {
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+}
+.task-window__item {
+  margin-top: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  -webkit-transition: height 0.5s ease 0.5s;
+  transition: height 0.5s ease 0.5s;
+}
+.task-window__name {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.task-window__delete {
+  padding: 5px;
+  background-color: rgb(110, 0, 0);
+  border-radius: 5px;
+  margin-top: 5px;
+  max-width: 100px;
+  text-align: center;
+  color: white;
+}
+.creator-task {
+  margin-top: 30px;
+  border: 2px solid rgb(60, 0, 109);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+.creator-task__name {
+  width: 200px;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.creator-task__inner {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.creator-task__create {
+  padding: 10px;
+  font-size: 20px;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 10px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.creator-task__create:hover {
+  background-color: rgb(200, 149, 248);
+}

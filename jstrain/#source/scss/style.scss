@@ -1,0 +1,84 @@
+@import 'nullstyle.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 14px;
+	background-color: rgb(216, 245, 235);
+}
+
+.task-window {
+	width: 700px;
+	margin: 0 auto;
+	margin-top: 40px;
+	text-align: center;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 20px;
+	&__title {
+		font-size: 24px;
+		font-weight: 700;
+	}
+	&__body {
+		width: 100%;
+		border-radius: 10px;
+		padding: 20px;
+		text-align: left;
+	}
+	&__item {
+		margin-top: 5px;
+		border: 2px solid black;
+		border-radius: 10px;
+		padding: 5px;
+		transition: height .5s ease .5s;
+	}
+	&__name {
+		font-size: 18px;
+		font-weight: 700;
+		margin-bottom: 8px;
+	}
+	&__inner {
+	}
+	&__delete {
+		padding: 5px;
+		background-color: rgb(110, 0, 0);
+		border-radius: 5px;
+		margin-top: 5px;
+		max-width: 100px;
+		text-align: center;
+		color: white;
+	}
+	&__creator {}
+}
+.creator-task {
+	margin-top: 30px;
+	border: 2px solid rgb(60, 0, 109);
+	padding: 20px;
+	border-radius: 10px;
+	text-align: left;
+	&__name {
+		width: 200px;
+		padding: 10px;
+		margin-bottom: 5px;
+		border: 1px solid black;
+		border-radius: 10px;
+	}
+	&__inner {
+		width: 100%;
+		padding: 10px;
+		margin-bottom: 5px;
+		border: 1px solid black;
+		border-radius: 10px;
+	}
+	&__create {
+		padding: 10px;
+		font-size: 20px;
+		background-color: blueviolet;
+		color: white;
+		border-radius: 10px;
+		transition: all .3s ease 0s;
+		&:hover{
+			background-color: rgb(200, 149, 248);
+		}
+	}
+}
